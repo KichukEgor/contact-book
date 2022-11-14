@@ -1,0 +1,55 @@
+/* Button customization */
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-primary:focus {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-danger:focus {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Modal customization */
+.modal-dialog {
+    margin: 0;
+}
+
+/* Bootstrap Accordion customization */
+.accordion {
+    height: 100%
+}
+
+.accordion-item {
+    margin-bottom: 24px;
+}
+
+.accordion-body {
+    padding: 0 1.25rem;
+}
+
+.accordion-button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.accordion-button:focus {
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}

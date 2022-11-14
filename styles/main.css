@@ -1,0 +1,255 @@
+@import "bootstrap-customization.css";
+
+
+:root{
+    --primary: #005BFE;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 70px 1fr;
+}
+
+/* Header */
+.header-wrapper {
+    z-index: 1;
+    box-shadow: 0 -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+/* Content */
+.content-wrapper {
+    padding: 0 10px;
+    background: #E5E5E5;
+}
+
+.contacts-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 56px 0;
+    background: #E5E5E5;
+}
+
+.default-message {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Buttons */
+.action-button {
+    width: 38px;
+    height: 38px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: 1px solid #ced4da;
+    fill: currentColor;
+}
+
+.action-button_edit {
+    background-image: url("../images/edit.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.action-button_edit:hover {
+    background-image: url("../images/edit-w.svg");
+}
+
+.action-button_remove {
+    background-image: url("../images/basket.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.action-button_remove:hover {
+    background-image: url("../images/basket-w.svg");
+}
+
+.error{
+    color: #f32013;
+}
+
+.success{
+    color: #4bb543;
+}
+
+/* group modal */
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr 38px;
+    grid-column-gap: 12px;
+}
+
+.add-group {
+    color: #005BFE;
+}
+
+/* Main Layout */
+.record {
+    display: grid;
+    grid-template-columns: 1fr 0fr 0fr 0fr;
+    grid-column-gap: 8px;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.record__name {
+    opacity: 0.5;
+}
+
+.record__number {
+    margin-right: 8px;
+}
+
+#fullscreen-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.message {
+    padding: 16px 0;
+}
+
+.error {
+    border-color: #dc3545;
+}
+
+.menu-button {
+    padding: 10px 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.menu-button img {
+    margin-left: 8px;
+}
+
+.add-group-btn {
+    font-weight: 700;
+    color: #005BFE;
+}
+
+.add-group-btn:hover {
+    color: #000000;
+}
+
+/* Modal customization */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-item {
+    padding: 11px 12px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form-item input:active {
+    background-color: #fff;
+}
+
+.modal__content {
+    min-height: 100vh;
+    width: 312px;
+    border: none;
+    border-radius: 0;
+}
+
+.modal__header {
+    height: 70px;
+    padding: 24px;
+}
+
+.modal__header h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.modal__body {
+    padding: 24px;
+}
+
+
+.modal__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    padding: 24px;
+}
+
+.modal__footer button:first-child {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.modal__footer button:nth-child(2) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
