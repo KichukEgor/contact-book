@@ -7,4 +7,4 @@
 https://kichukegor.github.io/contact-book/
 
 ![layout](https://github.com/KichukEgor/contact-book//raw/main/presentation/layout-1.png)
-![layout](https://github.com/KichukEgor/contact-book//raw/main/presentation/layout-1.png)
+![layout](https://github.com/KichukEgor/contact-book//raw/main/presentation/layout-2.png)
